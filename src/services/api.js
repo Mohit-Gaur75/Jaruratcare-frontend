@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = `${process.env.URL}/api`;
+const API_URL = `${process.env.URI}/api`;
 
 // Patient APIs
 export const registerPatient = (data) => axios.post(`${API_URL}/patients/register`, data);
