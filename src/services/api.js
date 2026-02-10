@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = `${process.env.URL}/api`;
 
 // Patient APIs
 export const registerPatient = (data) => axios.post(`${API_URL}/patients/register`, data);
